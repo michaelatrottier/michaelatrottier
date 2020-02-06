@@ -1,0 +1,737 @@
+/*Media Query for Desktop 1*/
+@media screen and (min-width:860px) {
+
+    /* Header */
+    nav {
+        background-color: #F7F7FF;
+        width: 100%;
+    }
+
+    /* Background color */
+    body {
+        background-color: #F7F7FF;
+    }
+
+    /* Logo */
+    .logo img {
+        width: 6%;
+        margin-left: 6%;
+    }
+
+    /* Background scooter image */
+    .container img {
+        width: 36%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 55px;
+    }
+
+    /* Slogan 1 */
+    .slogan-1 {
+        position: absolute;
+        z-index: auto;
+        margin: 0 auto;
+        left: 0;
+        right: 26%;
+        top: 18%;
+        width: 60%;       
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 450%;
+        color: #333131;
+    }
+
+    /* Slogan 2 */
+    .slogan-2 {
+        position: absolute;
+        z-index: auto;
+        margin: 0 auto;
+        left: 0;
+        right: 26%;
+        top: 50%;
+        width: 60%;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 140%;        
+        color: #333131;
+    }
+
+    /* Apply form container */
+    .container2 {
+        position: absolute;
+        z-index: auto;
+        margin: 0 auto;
+        left: 58%;
+        right: 0%;
+        top: 18%;
+        border-radius: 25px;
+        background: white;
+        padding: 50px;
+        height: 420px;
+        width: 440px;
+        box-shadow: 6px 7px 10px #C9C9CF;
+    }
+
+    /* "Apply Now" */
+    .container2 h1 {
+        position: absolute;
+        top: 0%;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 200%;
+        color: #333131;
+    }
+
+    /* h4 text */
+    .container2 h4 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;        
+        color: #333131;
+    }
+
+    /* Terms & conditions font */
+    label {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;        
+        color: #333131;
+    }
+
+    /* form text */
+    .container p {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        color: #333131;
+        text-align: center;
+    }
+
+    /*form text boxes*/
+    .apply-form {
+        margin-bottom: 20px;
+        border-radius: 10px;
+        background: #F4F4F5;
+        padding: 20px;
+        width: 400px;
+        height: 5px;
+    }
+
+    /* Drive with us button */
+    .btn {
+        background-color: #57EEAB;
+        width: 100%;
+        height: 12%;
+        margin-top: 10px;
+        border-radius: 10px;
+        line-height: 0em;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;  
+        font-size: 200%;              
+        color: #333131;
+    }
+
+    /* form link decoration */
+    a:link {
+        text-decoration: none;
+    }
+
+      /* footer */
+      .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 5%;
+        background-color: #FFFD8C;
+        padding: 45px;
+    }
+
+    /* footer font 1 */
+    .footer h1 {
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0;
+        right: 26%;
+        top: 20%;        
+        width: 60%;        
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 100%;
+        color: #333131;
+    }
+
+    /* footer font 2 */
+    .footer p {
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0;
+        right: 26%;
+        top: 40%;  
+        width: 60%;  
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 100%;
+        color: #333131;
+    }
+
+    /* footer instagram button */
+    .footer .instagram {
+        position: absolute;
+        right: 26%;
+    }
+
+    /* footer twitter button */
+    .footer .twitter {
+        position: absolute;
+        right: 22%;
+    }
+
+    /* footer facebook button */
+    .footer .facebook {
+        position: absolute;
+        right: 18%;
+    }
+
+    /* footer linkedin button */
+    .footer .linkedin {
+        position: absolute;
+        right: 14%;
+    }
+
+    /* hours text box */
+    .calc-form .hours {
+        position: absolute;
+        left: 0%;
+        right: 79%;
+        top: 60%;        
+        margin: 0 auto;
+        width: 6%;
+        height: 30px;
+        border-radius: 10px;
+    }
+
+    /* city text box */
+    .calc-form .city {
+        position: absolute;
+        margin: 0 auto;
+        left: 0%;
+        right: 59%;
+        top: 60%;
+        width: 12%;
+        border-radius: 10px;
+        height: 30px;
+    }
+
+    /* calculate button */
+    .calc-form .calc {
+        position: absolute;
+        background-color: #FF8480;
+        margin: 0 auto;
+        left: 0%;
+        right: 35%;
+        top: 58%;
+        width: 10%;
+        height: 38px;
+        border-radius: 10px;
+        line-height: 0em;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;  
+        font-size: 90%;              
+        color: white;
+    }
+  
+}
+
+
+/*Media Query 2 for Tablet*/
+@media screen and (max-width:859px) {
+
+    /* Header */
+    nav {
+        background-color: #F7F7FF;
+        width: 200px;
+        height: 1400px;
+    }
+
+    /* Background color */
+    body {
+        background-color: #F7F7FF;
+    }
+
+    /* Logo */
+    .logo img {
+        width: 50%;
+        margin-left: 70%;
+    }
+
+    /* Background scooter image */
+    .container img {
+        position: absolute;
+        width: 55%;
+        top: 50%;
+        left: 23%;
+    }
+
+    /* Slogan 1 */
+    .slogan-1 {
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0%;
+        right: 0%;
+        top: 12%;
+        width: 60%;
+        font-size: 460%;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        color: #333131;
+    }
+
+    /* Slogan 2 */
+    .slogan-2 {
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0;
+        right: 0%;
+        top: 43%;
+        width: 60%;      
+        font-size: 155%;          
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        color: #333131;
+    }
+
+    /* Apply form container */
+    .container2 {
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0%;
+        right: 0%;
+        top: 90%;
+        padding: 50px;
+        height: 420px;
+        width: 440px;
+        background: white;        
+        box-shadow: 6px 7px 10px #C9C9CF;
+        border-radius: 25px;        
+    }
+
+    /* "Apply Now" */
+    .container2 h1 {
+        position: absolute;
+        top: 0%;       
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;        
+        color: #333131;
+        font-size: 200%;
+    }
+
+    /* h4 text */
+    .container2 h4 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;        
+        color: #333131;
+    }
+
+    /* Terms & conditions font */
+    label {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;        
+        color: #333131;
+    }
+
+    /* form text */
+    .container p {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;      
+        text-align: center;          
+        color: #333131;
+    }
+
+    /*form text boxes*/
+    .apply-form {
+        background: #F4F4F5;     
+        margin-bottom: 20px;
+        border-radius: 10px;
+        padding: 20px;
+        width: 90%;
+        height: 5px;
+    }
+
+    /* Drive with us button */
+    .btn {
+        background-color: #57EEAB;
+        width: 100%;
+        height: 12%;
+        margin-top: 10px;
+        border-radius: 10px;
+        line-height: 0em;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;  
+        font-size: 200%;              
+        color: #333131;
+    }
+
+    /* form link decoration */
+    a:link {
+        text-decoration: none;
+    }
+
+    /* footer */
+    .footer {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        padding: 100px;
+        background-color: #FFFD8C;
+    }
+
+    /* footer font 1 */
+    .footer h1 {
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0;
+        right: 9%;
+        top: 15%;
+        width: 60%;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 120%;
+        color: #161212;
+    }
+
+    /* footer font 2 */
+    .footer p {
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0;
+        right: 9%;
+        top: 35%;
+        width: 60%;        
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 100%;
+        color: #333131;
+    }
+
+    /* footer instagram button */
+    .footer .instagram {
+        position: absolute;
+        right: 60%;
+        top: 80%;
+    }
+
+    /* footer twitter button */
+    .footer .twitter {
+        position: absolute;
+        right: 54%;
+        top: 80%;
+    }
+
+    /* footer facebook button */
+    .footer .facebook {
+        position: absolute;
+        right: 66%;
+        top: 80%;
+    }
+
+    /* footer linkedin button */
+    .footer .linkedin {
+        position: absolute;
+        right: 48%;
+        top: 80%;
+    }
+
+    /* hours text box */
+    .calc-form .hours {
+        position: absolute;
+        margin: 0 auto;
+        left: 0%;
+        right: 55%;
+        top: 50%;
+        width: 13%;
+        border-radius: 10px;
+        height: 30px;
+    }
+
+    /* city text box */
+    .calc-form .city {
+        position: absolute;
+        margin: 0 auto;
+        left: 0%;
+        right: 13%;
+        top: 50%;
+        width: 25%;
+        border-radius: 10px;
+        height: 30px;
+    }
+
+    /* calculate button */
+    .calc-form .calc {
+        position: absolute;
+        left: 30%;
+        right: 0%;
+        top: 49%;
+        width: 15%;      
+        height: 36px;         
+        margin: 0 auto;         
+        background-color: #FF8480;
+        border-radius: 10px;
+        line-height: 0em;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;  
+        font-size: 100%;              
+        color: white;
+    }
+
+}
+
+/*Media Query 3 for Mobile*/
+@media screen and (max-width:599px){
+
+    /* Header */
+    nav {
+        background-color: #F7F7FF;
+        padding-bottom: 30%;
+        width: 40%;
+    }
+
+    /* Background color */
+    body {
+        background-color: #F7F7FF;
+    }
+
+    /* Logo */
+    .logo img {
+        width: 50%;
+        margin-left: 35%;
+        margin-right: auto;
+    }
+
+    /* Background scooter image */
+    .container img {
+        position: absolute;
+        z-index: 999;
+        top: 75%;
+        left: 15%;
+        width: 65%;
+    }
+
+    /* Slogan 1 */
+    .slogan-1 {
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0%;
+        right: 7%;
+        top: 12%;
+        width: 60%;
+        color: #333131;       
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 400%;
+    }
+
+    /* Slogan 2 */
+    .slogan-2 {
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0%;
+        right: 7%;
+        top: 60%;
+        width: 60%;        
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 155%;        
+        color: #333131;
+    }
+
+    /* Apply form container */
+    .container2 {
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0%;
+        right: 0%;
+        top: 100%;
+        border-radius: 25px;
+        background: white;
+        padding: 10%;
+        height:50%;
+        width:70%;
+        box-shadow: 6px 7px 10px #C9C9CF;
+    }
+
+    /* "Apply Now" */
+    .container2 h1 {
+        position: absolute;
+        z-index: 999;
+        top: 0%;     
+        font-family: 'Montserrat', sans-serif;
+        color: #333131;
+        font-weight: 700;        
+        font-size: 200%;
+    }
+
+    /* h4 text */
+    .container2 h4 {
+        font-family: 'Montserrat', sans-serif;
+        color: #333131;
+        font-weight: 400;
+    }
+
+    /* Terms & conditions font */
+    label {
+        font-family: 'Montserrat', sans-serif;
+        color: #333131;
+        font-weight: 400;
+    }
+
+    /* form text */
+    .container p {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;        
+        color: #333131;
+    }
+
+    /*form text boxes*/
+    .apply-form {
+        background: #F4F4F5;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        padding: 20px;
+        width: 90%;
+        height: 5px;
+    }
+
+    /* Drive with us button */
+    .btn {
+        background-color: #57EEAB;
+        width: 100%;
+        height: 12%;
+        margin-top: 10px;
+        border-radius: 10px;
+        line-height: 0em;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;  
+        font-size: 200%;              
+        color: #333131;
+    }
+
+    /* form link decoration */
+    a:link {
+        text-decoration: none;
+    }
+
+    /* footer */
+    .footer {
+        background-color: #FFFD8C;        
+        width: 70%;
+        padding-top:50%;
+    }
+
+    /* footer font 1 */
+    .footer h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 120%;
+        color: #161212;
+        position: absolute;
+        margin: 0 auto;
+        left: 0;
+        right: 5%;
+        top: 10%;
+        width: 80%;
+    }
+
+    /* footer font 2 */
+    .footer p {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 100%;
+        color: #333131;
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0;
+        right: 5%;
+        top: 20%;
+        width: 80%;
+    }
+
+    /* footer instagram button */
+    .footer .instagram {
+        position: absolute;
+        right: 60%;
+        top: 80%;
+    }
+
+    /* footer twitter button */
+    .footer .twitter {
+        position: absolute;
+        right: 40%;
+        top:80%;
+    }
+
+    /* footer facebook button */
+    .footer .facebook {
+        position: absolute;
+        right: 80%;
+        top: 80%;
+    }
+
+    /* footer linkedin button */
+    .footer .linkedin {
+        position: absolute;
+        right: 20%;
+        top: 80%;
+    }
+
+    /* hours text box */
+    .calc-form .hours {
+        position: absolute;
+        margin: 0 auto;
+        left: 0%;
+        right: 60%;
+        top: 40%;
+        width: 25%;
+        height: 10%;
+        border-radius: 10px;
+    }
+
+    /* city text box */
+    .calc-form .city {
+        position: absolute;
+        margin: 0 auto;
+        left: 20%;
+        right: 0%;
+        top: 40%;
+        width: 50%;
+        border-radius: 10px;
+        height:10%;
+    }
+
+    /* calculate button */
+    .calc-form .calc {
+        background-color: #FF8480;       
+        width: 79%;
+        height: 36px;
+        left: 0%;
+        right: 7%;
+        top: 55%;
+        margin-top: 10px;
+        border-radius: 10px;
+        line-height: 0em;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;  
+        font-size: 150%;              
+        color: white;
+    }
+
+}
