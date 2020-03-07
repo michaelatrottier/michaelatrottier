@@ -1,0 +1,428 @@
+/* CSS Reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* CSS Reset End */
+
+
+/* CSS Style Begins */
+/*Here I placed code that is used among all screen sizes to decrease the number of lines of code.
+Previously I would copy and paste all code into each query.*/
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.header {
+  background: #f05f22;
+}
+
+.divWidgets {
+  display: flex;
+}
+
+.navNav>a {
+  padding: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+/* Originally had issues getting the slideshow image to completely cover the space. I was getting a small line of space 
+  on the right side of the page. This issue was resolved once I used "object-fit: cover;"*/
+.divSlideshow>img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.divAds>img {
+  height: auto;
+  padding-bottom: 40px;
+}
+
+.text {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+/*I thought animating the nav to expand upon hover would add a nice 
+ touch and may help the user*/
+#index:hover,
+#about:hover,
+#art:hover,
+#events:hover,
+#contact:hover {
+  transform: scale(1.3);
+}
+
+.text>a {
+  text-decoration: none;
+  color: black;
+  line-height: 150%;
+}
+
+/* Added an expand animation to the "advertisements" section of the home page because I 
+  thought this would be helpful to the user and help the ads to pop more. */
+#music:hover,
+#exhibits:hover,
+#artClass:hover {
+  transform: scale(1.2);
+}
+
+.divFooter>img {
+  height: auto;
+  padding-bottom: 50px;
+  margin-left: 70px;
+}
+
+.divFooter {
+  padding-top: 50px;
+  background-color: #f05f22;
+}
+
+.divFooter>p {
+  text-align: center;
+  padding-bottom: 10px;
+  font-family: 'Arial', sans-serif;
+}
+
+/*I decided to use multiple grids because it was the only way I could seem to get things to lay out properly. 
+This is the first time I use grid on an assignment (I did not take responsive web design 1 because I got it 
+exempted with Web Programming 1). I will do my best to improve my grid skills for future assignments.*/
+/*Header Grid*/
+.header {
+  display: grid;
+  grid-column-gap: 10px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "wg wg wg wg wg wg wg wg wg wg wg wg"
+    "hd hd hd hd hd hd hd hd hd hd hd hd"
+    "nv nv nv nv nv nv nv nv nv nv nv nv";
+}
+
+.divWidgets {
+  grid-area: wg;
+}
+
+.divHeader {
+  grid-area: hd;
+}
+
+.navNav {
+  grid-area: nv;
+}
+
+/*Main & Footer Grid*/
+.wrapper {
+  display: grid;
+  grid-column-gap: 10px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "ss ss ss ss ss ss ss ss ss ss ss ss"
+    "ad ad ad ad ad ad ad ad ad ad ad ad"
+    "txt txt txt txt txt txt txt txt txt txt txt txt"
+    "ft ft ft ft ft ft ft ft ft ft ft ft";
+}
+
+.divSlideshow {
+  grid-area: ss;
+}
+
+.divAds {
+  grid-area: ad;
+}
+
+.text {
+  grid-area: txt;
+}
+
+.divFooter {
+  grid-area: ft;
+}
+
+/*Media Query for Desktop */
+@media screen and (min-width:960px) {
+  .divWidgets {
+    grid-column: 10;
+  }
+
+  .divWidgets>img {
+    width: 30%;
+    height: auto;
+    padding-top: 10%;
+    padding-left: 5%;
+  }
+
+  .divHeader {
+    grid-column: 2 / span 8;
+  }
+
+  .divHeader>img {
+    max-width: 35%;
+    height: auto;
+  }
+
+  .navNav {
+    display: flex;
+    grid-column: 8 / span 10;
+    font-size: 1rem;
+    padding-bottom: 2%;
+  }
+
+  /* I see ways I could have done this better in the html. In the future I will try to use a better method. I learned how to combine the image 
+  and text so that the text will remain lined up center, but I learned it too close to the deadline of this assignment and didn't want to risk 
+  messing up what I have. When I did try to alter it, it was messing up the grid. */
+  .divAds {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 2 / span 10;
+    padding-top: 100px;
+  }
+
+  .divAds>img {
+    max-width: 27%;
+  }
+
+  .text {
+    grid-column: 3 / span 8;
+    font-size: 100%;
+  }
+
+  .divFooter img {
+    max-width: 3%;
+  }
+}
+
+/*Media Query for Tablet*/
+@media screen and (max-width:959px) {
+  .divWidgets {
+    grid-column: 9;
+  }
+
+  .divWidgets>img {
+    width: 50%;
+    height: auto;
+    padding-top: 15%;
+    padding-left: 5%;
+  }
+
+  .divHeader {
+    grid-column: 2 / span 8;
+  }
+
+  .divHeader>img {
+    max-width: 40%;
+    height: auto;
+  }
+
+  .navNav {
+    display: flex;
+    grid-column: 5 / span 8;
+    font-size: 1rem;
+    padding-bottom: 2%;
+  }
+
+  .divAds {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 2 / span 10;
+    padding-top: 100px;
+  }
+
+  .divAds>img {
+    max-width: 25%;
+  }
+
+  .text {
+    grid-column: 3 / span 8;
+    font-size: 90%;
+  }
+
+  .divFooter>img {
+    max-width: 3%;
+  }
+}
+
+/*Media Query for Mobile*/
+@media screen and (max-width:599px) {
+  .divWidgets {
+    grid-column: 10;
+  }
+
+  .divWidgets>img {
+    width: 80%;
+    height: auto;
+    padding-top: 30%;
+    padding-left: 5%;
+  }
+
+  .divHeader {
+    grid-column: 2 / span 10;
+  }
+
+  .divHeader>img {
+    max-width: 40%;
+    height: auto;
+  }
+
+  .navNav {
+    display: flex;
+    grid-column: 3 / span 12;
+    font-size: .8rem;
+    padding-bottom: 2%;
+  }
+
+  .divAds {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 2 / span 10;
+    padding-top: 100px;
+  }
+
+  .divAds>img {
+    max-width: 25%;
+  }
+
+  .text {
+    grid-column: 2 / span 10;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 90%;
+  }
+
+  .divFooter>img {
+    max-width: 5%;
+  }
+}

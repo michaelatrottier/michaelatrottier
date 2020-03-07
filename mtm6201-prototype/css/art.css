@@ -1,0 +1,665 @@
+/* CSS Reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* CSS Reset End */
+
+
+/* CSS Style Begins */
+/*Here I placed code that is used among all screen sizes to decrease the number of lines of code.
+Previously I would copy and paste all code into each query.*/
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.header {
+    background: #f05f22;
+}
+
+.divWidgets {
+    display: flex;
+}
+
+.navNav {
+    display: flex;
+    padding-bottom: 2%;
+}
+
+/*I thought animating the nav to expand upon hover would add a nice 
+ touch and may help the user*/
+#index:hover,
+#about:hover,
+#art:hover,
+#events:hover,
+#contact:hover {
+    transform: scale(1.3);
+}
+
+.navNav>a {
+    padding: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.banner {
+    display: flex;
+    padding: 3%;
+    background-color: #D1E8D3;
+}
+
+.banner>h1 {
+    position: relative;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+.artImages,
+.artImages2 {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+}
+
+.artImages>img,
+.artImages2>img {
+    max-width: 27%;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+.cart-buttons,
+.cart-buttons2 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+
+button {
+    border-radius: 5px;
+    font-weight: bold;
+    height: 30px;
+    width: 140px;
+    font-size: 80%;
+    color: white;
+    background-color: #f05f22;
+}
+
+/*Here I added a fade upon hover to the buttons under each image.*/
+#btn-1:hover,
+#btn-2:hover,
+#btn-3:hover,
+#btn-4:hover,
+#btn-5:hover,
+#btn-6:hover {
+    opacity: 0.6;
+    transition-duration: 0.3s;
+}
+
+.text,
+.text2 {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.text>a,
+.text2>a {
+    text-decoration: none;
+    color: black;
+}
+
+.divFooter>p {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.divFooter {
+    padding-top: 50px;
+    background-color: #f05f22;
+}
+
+.divFooter>img {
+    height: auto;
+    padding-bottom: 50px;
+    margin-left: 70px;
+}
+
+/*I used multiple grids because I was running into issues getting the background of the header and footer to 
+remain orange. The footer would also not remain on the bottom of the page when I combined it with the main grid.*/
+/* Header Grid */
+.header {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+        "wg wg wg wg wg wg wg wg wg wg wg wg"
+        "hd hd hd hd hd hd hd hd hd hd hd hd"
+        "nv nv nv nv nv nv nv nv nv nv nv nv";
+}
+
+.divWidgets {
+    grid-area: wg;
+}
+
+.divHeader {
+    grid-area: hd;
+}
+
+.navNav {
+    grid-area: nv;
+}
+
+/* Main Grid */
+.wrapper {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+        "b b b b b b b b b b b b"
+        "s s s s s s s s s s s s"
+        "a a a a a a a a a a a a"
+        "txt txt txt txt txt txt txt txt txt txt txt txt"
+        "btn btn btn btn btn btn btn btn btn btn btn btn"
+        "a2 a2 a2 a2 a2 a2 a2 a2 a2 a2 a2 a2"
+        "txt2 txt2 txt2 txt2 txt2 txt2 txt2 txt2 txt2 txt2 txt2 txt2"
+        "btn2 btn2 btn2 btn2 btn2 btn2 btn2 btn2 btn2 btn2 btn2 btn2";
+}
+
+.banner {
+    grid-area: b;
+}
+
+.sort {
+    grid-area: s;
+}
+
+.artImages {
+    grid-area: a;
+}
+
+.text {
+    grid-area: txt;
+}
+
+.cart-buttons {
+    grid-area: btn;
+}
+
+.artImages2 {
+    grid-area: a2;
+}
+
+.text2 {
+    grid-area: txt2;
+}
+
+.cart-buttons2 {
+    grid-area: btn2;
+}
+
+
+/*Footer Grid*/
+.footer {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+        "ft ft ft ft ft ft ft ft ft ft ft ft";
+}
+
+.divFooter {
+    grid-area: ft;
+}
+
+
+/* Media Query for Desktop */
+@media screen and (min-width:960px) {
+    .divWidgets {
+        grid-column: 10;
+    }
+
+    .divWidgets>img {
+        width: 30%;
+        height: auto;
+        padding-top: 10%;
+        padding-left: 5%;
+    }
+
+    .divHeader {
+        grid-column: 2 / span 8;
+    }
+
+    .divHeader>img {
+        max-width: 35%;
+        height: auto;
+    }
+
+    .navNav {
+        display: flex;
+        grid-column: 8 / span 10;
+        font-size: 1rem;
+        padding-bottom: 2%;
+    }
+
+    .banner>h1 {
+        left: 47%;
+        font-size: 130%;
+    }
+
+    /* Here I have the styling for the buttons. I wish I had done hover buttons instead of 
+    buttons with a label because I find it kind of messy. I tried to create a blank drop down
+    option but ran into validation errors. */
+    label,
+    .sort {
+        display: flex;
+        margin-top: 20px;
+        grid-column: 2;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+    }
+
+    select[id=sort] {
+        margin-top: 18px;
+        position: absolute;
+        left: 15%;
+    }
+
+    label,
+    .sort2 {
+        display: flex;
+        margin-top: 20px;
+        grid-column: 5;
+    }
+
+    select[id=sort2] {
+        margin-top: 18px;
+        position: absolute;
+        left: 40%;
+    }
+
+    label,
+    .sort3 {
+        display: flex;
+        margin-top: 20px;
+        grid-column: 8;
+    }
+
+    select[id=sort3] {
+        margin-top: 18px;
+        position: absolute;
+        left: 70%;
+    }
+
+    /* I see ways I could have done this better in the html. In the future I will try to use a better method. I learned how to combine the image 
+  and text so that the text will remain lined up center, but I learned it too close to the deadline of this assignment and didn't want to risk 
+  messing up what I have. When I did try to alter it, it was messing up the grid. */
+    .artImages {
+        padding-top: 90px;
+        grid-column: 2 / span 10;
+    }
+
+    .artImages2 {
+        padding-top: 70px;
+        grid-column: 2 / span 10;
+    }
+
+    .text,
+    .text2 {
+        grid-column: 3 / span 8;
+        font-size: 100%;
+    }
+
+    .cart-buttons,
+    .cart-buttons2 {
+        grid-column: 3 / span 8;
+        width: 102%;
+    }
+
+    .divFooter>img {
+        max-width: 3%;
+    }
+}
+
+/* Media Query for Tablet */
+@media screen and (max-width:959px) {
+    .divWidgets {
+        grid-column: 9;
+    }
+
+    .divWidgets>img {
+        width: 50%;
+        height: auto;
+        padding-top: 15%;
+        padding-left: 5%;
+    }
+
+    .divHeader {
+        grid-column: 2 / span 8;
+    }
+
+    .divHeader>img {
+        max-width: 40%;
+        height: auto;
+    }
+
+    .navNav {
+        grid-column: 5 / span 8;
+    }
+
+    .banner>h1 {
+        left: 47%;
+        font-size: 130%;
+    }
+
+    label,
+    .sort {
+        display: flex;
+        margin-top: 20px;
+        grid-column: 2;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+    }
+
+    select[id=sort] {
+        margin-top: 18px;
+        position: absolute;
+        left: 20%;
+    }
+
+    label,
+    .sort2 {
+        display: flex;
+        margin-top: 20px;
+        grid-column: 7;
+    }
+
+    select[id=sort2] {
+        margin-top: 18px;
+        position: absolute;
+        left: 65%;
+    }
+
+    label,
+    .sort3 {
+        display: flex;
+        margin-top: 18px;
+        grid-row: 3;
+        grid-column: 2;
+    }
+
+    select[id=sort3] {
+        margin-top: 18px;
+        position: absolute;
+        left: 20%;
+    }
+
+    .artImages {
+        padding-top: 100px;
+        grid-column: 2 / span 10;
+    }
+
+    .artImages2 {
+        padding-top: 70px;
+        grid-column: 2 / span 10;
+    }
+
+    .artImages>img {
+        max-width: 27%;
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .text,
+    .text2 {
+        grid-column: 2 / span 10;
+        font-size: 100%;
+    }
+
+    .cart-buttons,
+    .cart-buttons2 {
+        grid-column: 2 / span 10;
+        width: 100%;
+    }
+
+    .artImages2>img {
+        max-width: 27%;
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .divFooter>img {
+        max-width: 3%;
+    }
+}
+
+/* Media Query for Mobile */
+@media screen and (max-width:599px) {
+    .divWidgets {
+        grid-column: 10;
+    }
+
+    .divWidgets>img {
+        width: 80%;
+        height: auto;
+        padding-top: 30%;
+        padding-left: 5%;
+    }
+
+    .divHeader {
+        grid-column: 2 / span 10;
+    }
+
+    .divHeader>img {
+        max-width: 40%;
+        height: auto;
+    }
+
+    .navNav {
+        display: flex;
+        grid-column: 3 / span 12;
+        font-size: .8rem;
+        padding-bottom: 2%;
+    }
+
+    .banner>h1 {
+        left: 40%;
+        font-size: 100%;
+    }
+
+    label,
+    .sort {
+        display: inline-block;
+        margin-top: 20px;
+        grid-column: 2;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+    }
+
+    select[id=sort] {
+        margin-top: -17px;
+        position: absolute;
+        left: 20%;
+    }
+
+    label,
+    .sort2 {
+        display: flex;
+        margin-top: 20px;
+        grid-column: 8;
+    }
+
+    select[id=sort2] {
+        margin-top: 18px;
+        position: absolute;
+        left: 70%;
+    }
+
+    label,
+    .sort3 {
+        display: flex;
+        margin-top: 20px;
+        grid-column: 2;
+    }
+
+    select[id=sort3] {
+        margin-top: 18px;
+        position: absolute;
+        left: 20%;
+    }
+
+    .artImages {
+        padding-top: 90px;
+        grid-column: 2 / span 10;
+    }
+
+    .artImages2 {
+        padding-top: 20px;
+        grid-column: 2 / span 10;
+    }
+
+    .text,
+    .text2 {
+        grid-column: 2 / span 10;
+        font-size: 100%;
+    }
+
+    .cart-buttons,
+    .cart-buttons2 {
+        grid-column: 2 / span 10;
+        width: 102%;
+    }
+
+    .divFooter>img {
+        max-width: 5%;
+    }
+}

@@ -1,0 +1,414 @@
+/* CSS Reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* CSS Reset End */
+
+
+/* CSS Style Begins */
+/*Here I placed code that is used among all screen sizes to decrease the number of lines of code.
+Previously I would copy and paste all code into each query.*/
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.header {
+    background: #f05f22;
+}
+
+.divWidgets {
+    grid-column: 10;
+    display: flex;
+}
+
+.navNav>a {
+    padding: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+/*I thought animating the nav to expand upon hover would add a nice 
+ touch and may help the user*/
+#index:hover,
+#about:hover,
+#art:hover,
+#events:hover,
+#contact:hover {
+    transform: scale(1.3);
+}
+
+.divFooter {
+    padding-top: 3%;
+    background-color: #f05f22;
+}
+
+.divFooter>img {
+    height: auto;
+    padding-bottom: 50px;
+    margin-left: 70px;
+}
+
+.divFooter>p {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/* Here I was able to combine the main with the footer without it giving me issues, unlike in my css for the art page.*/
+/*Header Grid*/
+.header {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "wg wg wg wg wg wg wg wg wg wg wg wg"
+        "hd hd hd hd hd hd hd hd hd hd hd hd"
+        "nv nv nv nv nv nv nv nv nv nv nv nv";
+}
+
+.divWidgets {
+    grid-area: wg;
+}
+
+.divHeader {
+    grid-area: hd;
+}
+
+.navNav {
+    grid-area: nv;
+}
+
+
+/*Main & Footer Grid*/
+.about {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "ai ai ai ai ai ai at at at at at at"
+        "ft ft ft ft ft ft ft ft ft ft ft ft";
+}
+
+.aboutText {
+    grid-area: at;
+}
+
+.aboutImage {
+    grid-area: ai;
+}
+
+.divFooter {
+    grid-area: ft;
+}
+
+
+
+/*Media Query for Desktop*/
+@media screen and (min-width:960px) {
+    .divWidgets {
+        grid-column: 10;
+    }
+
+    .divWidgets>img {
+        width: 30%;
+        height: auto;
+        padding-top: 10%;
+        padding-left: 5%;
+    }
+
+    .divHeader {
+        grid-column: 2 / span 8;
+    }
+
+    .divHeader>img {
+        max-width: 35%;
+        height: auto;
+    }
+
+    .navNav {
+        display: flex;
+        grid-column: 8 / span 10;
+        font-size: 1rem;
+        padding-bottom: 2%;
+    }
+
+    .aboutImage {
+        display: flex;
+        grid-column: 2;
+        padding-top: 30%;
+    }
+
+    /* At first I was having issues getting the picture to remain proportioned because the image would "squish" when you 
+    shrink the screen size. I solved this issue by using height:500px. It was giving me this issue when I used "max-width/max-height".*/
+    .aboutImage>img {
+        height: 500px;
+        padding-left: 20%;
+        margin: 5px auto 5px auto;
+    }
+
+    .aboutText {
+        padding-top: 150px;
+        display: inline-block;
+        grid-column: 6 / span 5;
+        font-size: 100%;
+    }
+
+    /* Here I was having issues where the footer would "slide" up to the top and leave and gap at the bottom. I was able to 
+    diminish the gap by using margin-top. It doesn't do this on the mobile version, only desktop and tablet. */
+    .divFooter {
+        margin-top: 10%;
+    }
+
+    .divFooter>img {
+        max-width: 3%;
+    }
+}
+
+/*Media Query for Tablet*/
+@media screen and (max-width:959px) {
+    .divWidgets {
+        grid-column: 9;
+    }
+
+    .divWidgets>img {
+        width: 50%;
+        height: auto;
+        padding-top: 15%;
+        padding-left: 5%;
+    }
+
+    .divHeader {
+        grid-column: 2 / span 8;
+    }
+
+    .divHeader>img {
+        max-width: 40%;
+        height: auto;
+    }
+
+    .navNav {
+        display: flex;
+        grid-column: 5 / span 8;
+        font-size: 1rem;
+        padding-bottom: 2%;
+    }
+
+    .aboutImage {
+        display: flex;
+        padding-top: 60px;
+        padding-bottom: 70px;
+        grid-row: 3;
+        grid-column: 2;
+        max-width: 100%;
+    }
+
+    .aboutText {
+        padding-top: 60px;
+        display: inline-block;
+        grid-row: 3 / span 2;
+        grid-column: 6 / span 6;
+        font-size: 90%;
+    }
+
+    .aboutImage>img {
+        max-width: 400%;
+        height: auto;
+    }
+
+    /* Here I was having issues where the footer would "slide" up to the top and leave and gap at the bottom. I was able to 
+    diminish the gap by using margin-top.*/
+    .divFooter {
+        margin-top: 25%;
+    }
+
+    .divFooter>img {
+        max-width: 3%;
+    }
+}
+
+
+/*Media Query for Mobile*/
+@media screen and (max-width:599px) {
+    .divWidgets {
+        grid-column: 10;
+    }
+
+    .divWidgets>img {
+        width: 80%;
+        height: auto;
+        padding-top: 30%;
+        padding-left: 5%;
+    }
+
+    .divHeader {
+        grid-column: 2 / span 10;
+    }
+
+    .divHeader>img {
+        max-width: 40%;
+        height: auto;
+    }
+
+    .navNav {
+        display: flex;
+        grid-column: 3 / span 12;
+        font-size: .8rem;
+        padding-bottom: 2%;
+    }
+
+    .aboutImage {
+        padding-top: 60px;
+        padding-bottom: 70px;
+        display: flex;
+        grid-row: 3;
+        grid-column: 2;
+        max-width: 100%;
+    }
+
+    .aboutText {
+        display: inline-block;
+        grid-row: 3 / span 2;
+        grid-column: 6 / span 6;
+        padding-top: 60px;
+        font-size: 90%;
+    }
+
+    .aboutImage>img {
+        max-width: 400%;
+        height: auto;
+    }
+
+    .divFooter>img {
+        max-width: 5%;
+    }
+}
