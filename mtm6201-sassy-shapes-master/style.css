@@ -1,0 +1,269 @@
+/**********************************************
+ * STARTER CODE
+ **********************************************/
+.shapes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  grid-gap: 50px;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.circle-red, .circle-blue, .circle-green, .circle-purple, .circle-orange, .square-red, .square-blue, .square-green, .square-purple, .square-orange {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+}
+
+.circle-red, .circle-blue, .circle-green, .circle-purple, .circle-orange {
+  border-radius: 50%;
+  background-color: black;
+}
+
+.pentagon-red, .pentagon-blue, .pentagon-green, .pentagon-purple, .pentagon-orange {
+  position: relative;
+  width: 54px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border-width: 50px 18px 0;
+  border-style: solid;
+  border-color: black transparent;
+}
+
+.pentagon-red::before, .pentagon-blue::before, .pentagon-green::before, .pentagon-purple::before, .pentagon-orange::before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -85px;
+  left: -18px;
+  border-width: 0 45px 35px;
+  border-style: solid;
+  border-color: transparent transparent black;
+}
+
+/**********************************************
+ * YOUR CODE BELOW
+ **********************************************/
+/* creating mixin */
+/* I tried multiple variations including $shape in $shapes and $color in $colors. 
+It didn't work until I separated the each statements.*/
+/* I originally had ".square-shape {
+      @include shape(square, $color:red); etc. 
+      which was showing me the first line of shapes.
+      Then I tried adding and calling color.*/
+.square-red {
+  /* checking shape for the value of square with an if statement */
+  /* if shape contains the value of square, extend the contents of square */
+  /* make $color override black */
+  background-color: red;
+  /* checking shape for the value of circle with an if statement */
+  /* checking shape for the value of pentagon with an if statement */
+}
+
+/* I originally had ".square-shape {
+      @include shape(square, $color:red); etc. 
+      which was showing me the first line of shapes.
+      Then I tried adding and calling color.*/
+.square-blue {
+  /* checking shape for the value of square with an if statement */
+  /* if shape contains the value of square, extend the contents of square */
+  /* make $color override black */
+  background-color: blue;
+  /* checking shape for the value of circle with an if statement */
+  /* checking shape for the value of pentagon with an if statement */
+}
+
+/* I originally had ".square-shape {
+      @include shape(square, $color:red); etc. 
+      which was showing me the first line of shapes.
+      Then I tried adding and calling color.*/
+.square-green {
+  /* checking shape for the value of square with an if statement */
+  /* if shape contains the value of square, extend the contents of square */
+  /* make $color override black */
+  background-color: green;
+  /* checking shape for the value of circle with an if statement */
+  /* checking shape for the value of pentagon with an if statement */
+}
+
+/* I originally had ".square-shape {
+      @include shape(square, $color:red); etc. 
+      which was showing me the first line of shapes.
+      Then I tried adding and calling color.*/
+.square-purple {
+  /* checking shape for the value of square with an if statement */
+  /* if shape contains the value of square, extend the contents of square */
+  /* make $color override black */
+  background-color: purple;
+  /* checking shape for the value of circle with an if statement */
+  /* checking shape for the value of pentagon with an if statement */
+}
+
+/* I originally had ".square-shape {
+      @include shape(square, $color:red); etc. 
+      which was showing me the first line of shapes.
+      Then I tried adding and calling color.*/
+.square-orange {
+  /* checking shape for the value of square with an if statement */
+  /* if shape contains the value of square, extend the contents of square */
+  /* make $color override black */
+  background-color: orange;
+  /* checking shape for the value of circle with an if statement */
+  /* checking shape for the value of pentagon with an if statement */
+}
+
+/* I originally had ".square-shape {
+      @include shape(square, $color:red); etc. 
+      which was showing me the first line of shapes.
+      Then I tried adding and calling color.*/
+.circle-red {
+  /* checking shape for the value of square with an if statement */
+  /* checking shape for the value of circle with an if statement */
+  /* if shape contains the value of circle, extend the contents of circle */
+  /* make $color override black */
+  background-color: red;
+  /* checking shape for the value of pentagon with an if statement */
+}
+
+/* I originally had ".square-shape {
+      @include shape(square, $color:red); etc. 
+      which was showing me the first line of shapes.
+      Then I tried adding and calling color.*/
+.circle-blue {
+  /* checking shape for the value of square with an if statement */
+  /* checking shape for the value of circle with an if statement */
+  /* if shape contains the value of circle, extend the contents of circle */
+  /* make $color override black */
+  background-color: blue;
+  /* checking shape for the value of pentagon with an if statement */
+}
+
+/* I originally had ".square-shape {
+      @include shape(square, $color:red); etc. 
+      which was showing me the first line of shapes.
+      Then I tried adding and calling color.*/
+.circle-green {
+  /* checking shape for the value of square with an if statement */
+  /* checking shape for the value of circle with an if statement */
+  /* if shape contains the value of circle, extend the contents of circle */
+  /* make $color override black */
+  background-color: green;
+  /* checking shape for the value of pentagon with an if statement */
+}
+
+/* I originally had ".square-shape {
+      @include shape(square, $color:red); etc. 
+      which was showing me the first line of shapes.
+      Then I tried adding and calling color.*/
+.circle-purple {
+  /* checking shape for the value of square with an if statement */
+  /* checking shape for the value of circle with an if statement */
+  /* if shape contains the value of circle, extend the contents of circle */
+  /* make $color override black */
+  background-color: purple;
+  /* checking shape for the value of pentagon with an if statement */
+}
+
+/* I originally had ".square-shape {
+      @include shape(square, $color:red); etc. 
+      which was showing me the first line of shapes.
+      Then I tried adding and calling color.*/
+.circle-orange {
+  /* checking shape for the value of square with an if statement */
+  /* checking shape for the value of circle with an if statement */
+  /* if shape contains the value of circle, extend the contents of circle */
+  /* make $color override black */
+  background-color: orange;
+  /* checking shape for the value of pentagon with an if statement */
+}
+
+/* I originally had ".square-shape {
+      @include shape(square, $color:red); etc. 
+      which was showing me the first line of shapes.
+      Then I tried adding and calling color.*/
+.pentagon-red {
+  /* checking shape for the value of square with an if statement */
+  /* checking shape for the value of circle with an if statement */
+  /* checking shape for the value of pentagon with an if statement */
+  /* if shape contains the value of pentagon, extend the contents of pentagon */
+  border-color: red transparent transparent;
+  /*removed background-color and the rectangular shape disapeared*/
+}
+
+.pentagon-red::before {
+  border-color: transparent transparent red;
+}
+
+/* I originally had ".square-shape {
+      @include shape(square, $color:red); etc. 
+      which was showing me the first line of shapes.
+      Then I tried adding and calling color.*/
+.pentagon-blue {
+  /* checking shape for the value of square with an if statement */
+  /* checking shape for the value of circle with an if statement */
+  /* checking shape for the value of pentagon with an if statement */
+  /* if shape contains the value of pentagon, extend the contents of pentagon */
+  border-color: blue transparent transparent;
+  /*removed background-color and the rectangular shape disapeared*/
+}
+
+.pentagon-blue::before {
+  border-color: transparent transparent blue;
+}
+
+/* I originally had ".square-shape {
+      @include shape(square, $color:red); etc. 
+      which was showing me the first line of shapes.
+      Then I tried adding and calling color.*/
+.pentagon-green {
+  /* checking shape for the value of square with an if statement */
+  /* checking shape for the value of circle with an if statement */
+  /* checking shape for the value of pentagon with an if statement */
+  /* if shape contains the value of pentagon, extend the contents of pentagon */
+  border-color: green transparent transparent;
+  /*removed background-color and the rectangular shape disapeared*/
+}
+
+.pentagon-green::before {
+  border-color: transparent transparent green;
+}
+
+/* I originally had ".square-shape {
+      @include shape(square, $color:red); etc. 
+      which was showing me the first line of shapes.
+      Then I tried adding and calling color.*/
+.pentagon-purple {
+  /* checking shape for the value of square with an if statement */
+  /* checking shape for the value of circle with an if statement */
+  /* checking shape for the value of pentagon with an if statement */
+  /* if shape contains the value of pentagon, extend the contents of pentagon */
+  border-color: purple transparent transparent;
+  /*removed background-color and the rectangular shape disapeared*/
+}
+
+.pentagon-purple::before {
+  border-color: transparent transparent purple;
+}
+
+/* I originally had ".square-shape {
+      @include shape(square, $color:red); etc. 
+      which was showing me the first line of shapes.
+      Then I tried adding and calling color.*/
+.pentagon-orange {
+  /* checking shape for the value of square with an if statement */
+  /* checking shape for the value of circle with an if statement */
+  /* checking shape for the value of pentagon with an if statement */
+  /* if shape contains the value of pentagon, extend the contents of pentagon */
+  border-color: orange transparent transparent;
+  /*removed background-color and the rectangular shape disapeared*/
+}
+
+.pentagon-orange::before {
+  border-color: transparent transparent orange;
+}
+/*# sourceMappingURL=style.css.map */

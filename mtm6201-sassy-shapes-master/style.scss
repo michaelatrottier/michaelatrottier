@@ -1,0 +1,108 @@
+/**********************************************
+ * STARTER CODE
+ **********************************************/
+
+.shapes {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 50px;
+  justify-items: center;
+  align-items: center;
+}
+
+%square {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+}
+
+%circle {
+  @extend %square;
+  border-radius: 50%;
+  background-color: black;
+}
+
+%pentagon {
+  position: relative;
+  width: 54px;
+  box-sizing: content-box;
+  border-width: 50px 18px 0;
+  border-style: solid;
+  border-color: black transparent;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -85px;
+    left: -18px;
+    border-width: 0 45px 35px;
+    border-style: solid;
+    border-color: transparent transparent black;
+  }
+}
+
+$colors: red,
+blue,
+green,
+purple,
+orange;
+
+$shapes: square,
+circle,
+pentagon;
+
+/**********************************************
+ * YOUR CODE BELOW
+ **********************************************/
+
+/* creating mixin */
+@mixin shape ($shape, $color) {
+
+  /* checking shape for the value of square with an if statement */
+  @if $shape==square {
+    /* if shape contains the value of square, extend the contents of square */
+    @extend %square;
+    /* make $color override black */
+    background-color: $color;
+  }
+
+  /* checking shape for the value of circle with an if statement */
+  @if $shape==circle {
+    /* if shape contains the value of circle, extend the contents of circle */
+    @extend %circle;
+    /* make $color override black */
+    background-color: $color;
+  }
+
+  /* checking shape for the value of pentagon with an if statement */
+  @if $shape==pentagon {
+    /* if shape contains the value of pentagon, extend the contents of pentagon */
+    @extend %pentagon;
+    border-color: $color transparent transparent;
+
+    /*removed background-color and the rectangular shape disapeared*/
+
+    &::before {
+      border-color: transparent transparent $color;
+    }
+  }
+}
+
+/* I tried multiple variations including $shape in $shapes and $color in $colors. 
+It didn't work until I separated the each statements.*/
+@each $shape in $shapes {
+  @each $color in $colors {
+
+    /* I originally had ".square-#{shape} {
+      @include shape(square, $color:red); etc. 
+      which was showing me the first line of shapes.
+      Then I tried adding and calling color.
+      This worked*/
+
+    .#{$shape}-#{$color} {
+      @include shape($shape, $color);
+    }
+  }
+}
