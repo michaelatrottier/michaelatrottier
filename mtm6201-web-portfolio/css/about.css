@@ -271,6 +271,7 @@ p {
 
 /*Media Query for Desktop */
 @media screen and (min-width:960px) {
+
     .logo,
     img {
         grid-column: 1 / span 2;
@@ -315,17 +316,20 @@ p {
         width: 80%;
         height: 160%;
     }
-    #edu-image{
-        margin-bottom:-13%;
+
+    #edu-image {
+        margin-bottom: -13%;
     }
-    #back{
-        margin-bottom:2%;
+
+    #back {
+        margin-bottom: 2%;
     }
 }
 
 
 /*Media Query for Tablet*/
 @media screen and (max-width:959px) {
+
     .logo,
     img {
         grid-column: 1 / span 2;
@@ -370,17 +374,19 @@ p {
         width: 80%;
         height: 160%;
     }
-    #edu-image{
-        margin-bottom:-25%;
+
+    #edu-image {
+        margin-bottom: -25%;
     }
 
-    #back{
-        margin-bottom:5%;
+    #back {
+        margin-bottom: 5%;
     }
 }
 
 /*Media Query for Mobile*/
 @media screen and (max-width:599px) {
+
     .logo,
     img {
         grid-column: 1 / span 2;
@@ -406,7 +412,7 @@ p {
     .education {
         grid-column: 1 / span 3;
         justify-self: start;
-        margin-left:10%;
+        margin-left: 10%;
         width: 140%;
         height: 140%;
     }
@@ -414,26 +420,27 @@ p {
     .front-end {
         grid-column: 6 / span 3;
         justify-self: center;
-        margin-left:10%;
+        margin-left: 10%;
         width: 140%;
         height: 140%;
     }
 
     .back-end {
         grid-column: 1 / span 6;
-        grid-row:2;
+        grid-row: 2;
         justify-self: start;
         margin-top: 60%;
-        margin-bottom:10%;
-        margin-left:5%;
+        margin-bottom: 10%;
+        margin-left: 5%;
         width: 68%;
-        height: 80%; 
+        height: 80%;
     }
 
-    #edu-image{
-        margin-bottom:-13%;
+    #edu-image {
+        margin-bottom: -13%;
     }
-    #front{
-        margin-bottom:9%;
+
+    #front {
+        margin-bottom: 9%;
     }
 }

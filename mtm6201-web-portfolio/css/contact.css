@@ -160,7 +160,7 @@ img {
 
 .contact-me {
     display: flex;
-    color:#393939;
+    color: #393939;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
@@ -168,33 +168,34 @@ img {
 .paragraph {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    color:#393939;
+    color: #393939;
 }
 
 .form {
-    display:flex;
+    display: flex;
 }
 
-#fname, #email{
-    background-color:#545454;
-    width:40%;
-    margin-bottom:4%;
-    padding:3%;
+#fname,
+#email {
+    background-color: #545454;
+    width: 40%;
+    margin-bottom: 4%;
+    padding: 3%;
     border-radius: 10px;
 }
 
-#subject{
-    background-color:#545454;
-    width:88%;
-    margin-bottom:4%;
-    padding:3%;
+#subject {
+    background-color: #545454;
+    width: 88%;
+    margin-bottom: 4%;
+    padding: 3%;
     border-radius: 10px;
 }
 
-#message{
-    background-color:#545454;
-    width:93%;
-    margin-bottom:4%;
+#message {
+    background-color: #545454;
+    width: 93%;
+    margin-bottom: 4%;
     border-radius: 10px;
 }
 
@@ -250,12 +251,12 @@ img {
 
     .nav {
         grid-column: 3 / span 5;
-        padding-top:4%;
-        margin-left:10%;
+        padding-top: 4%;
+        margin-left: 10%;
     }
 
     #contact {
-        margin-left:20%;
+        margin-left: 20%;
     }
 
     .nav>a {
@@ -272,32 +273,33 @@ img {
     .paragraph {
         grid-column: 1 / span 3;
         padding-left: 30%;
-        margin-top:10%;
-        padding-top:0%; 
-        font-size:100%;
+        margin-top: 10%;
+        padding-top: 0%;
+        font-size: 100%;
     }
 
     .form {
-        width:150%;
-        grid-column:1 / span 2;
-        padding-left:45%;
-        margin-top:15%;
+        width: 150%;
+        grid-column: 1 / span 2;
+        padding-left: 45%;
+        margin-top: 15%;
     }
 
     #me-contact {
-        position:absolute;
-        z-index:-1;
-        top:15%;
-        left:30%;
-        width:40%;
-        height:auto;
+        position: absolute;
+        z-index: -1;
+        top: 15%;
+        left: 30%;
+        width: 40%;
+        height: auto;
     }
-    
+
 }
 
 
 /*Media Query for Tablet*/
 @media screen and (max-width:959px) {
+
     .logo,
     img {
         grid-column: 1 / span 2;
@@ -307,12 +309,12 @@ img {
 
     .nav {
         grid-column: 3 / span 5;
-        padding-top:6%;
-        margin-left:10%;
+        padding-top: 6%;
+        margin-left: 10%;
     }
 
     #contact {
-        margin-left:20%;
+        margin-left: 20%;
     }
 
     .nav>a {
@@ -329,24 +331,24 @@ img {
     .paragraph {
         grid-column: 1 / span 6;
         padding-left: 31%;
-        margin-bottom:5%;
-        margin-top:5%;
-        font-size:100%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        font-size: 100%;
     }
 
     .form {
-        width:70%;
-        grid-column:1 / span 6;
-        padding-left:30%;
-        padding-bottom:10%;
+        width: 70%;
+        grid-column: 1 / span 6;
+        padding-left: 30%;
+        padding-bottom: 10%;
     }
 
     #me-contact {
-        position:absolute;
-        z-index:-1;
-        top:10%;
-        left:-2%;
-        max-width:50%;
+        position: absolute;
+        z-index: -1;
+        top: 10%;
+        left: -2%;
+        max-width: 50%;
     }
 }
 
@@ -356,7 +358,7 @@ img {
     .logo,
     img {
         grid-column: 1 / span 2;
-        margin-left:5%;
+        margin-left: 5%;
         width: 110%;
         height: auto;
     }
@@ -367,12 +369,12 @@ img {
     }
 
     #contact {
-        margin-left:30%;
+        margin-left: 30%;
     }
 
     .nav>a {
         font-size: 100%;
-        margin-left:10%;
+        margin-left: 10%;
     }
 
     .contact-me {
@@ -385,22 +387,22 @@ img {
     .paragraph {
         grid-column: 1 / span 6;
         padding-left: 25%;
-        margin-bottom:5%;
-        margin-top:5%;
-        font-size:100%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        font-size: 100%;
     }
 
     .form {
-        width:90%;
-        grid-column:1 / span 6;
-        padding-left:25%;
+        width: 90%;
+        grid-column: 1 / span 6;
+        padding-left: 25%;
     }
 
     #me-contact {
-        position:absolute;
-        z-index:-1;
-        top:10%;
-        left:4%;
-        max-width:80%;
+        position: absolute;
+        z-index: -1;
+        top: 10%;
+        left: 4%;
+        max-width: 80%;
     }
 }
