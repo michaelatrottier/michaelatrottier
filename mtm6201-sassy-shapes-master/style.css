@@ -55,7 +55,8 @@ It didn't work until I separated the each statements.*/
 /* I originally had ".square-shape {
       @include shape(square, $color:red); etc. 
       which was showing me the first line of shapes.
-      Then I tried adding and calling color.*/
+      Then I tried adding and calling color.
+      This worked*/
 .square-red {
   /* checking shape for the value of square with an if statement */
   /* if shape contains the value of square, extend the contents of square */
@@ -68,7 +69,8 @@ It didn't work until I separated the each statements.*/
 /* I originally had ".square-shape {
       @include shape(square, $color:red); etc. 
       which was showing me the first line of shapes.
-      Then I tried adding and calling color.*/
+      Then I tried adding and calling color.
+      This worked*/
 .square-blue {
   /* checking shape for the value of square with an if statement */
   /* if shape contains the value of square, extend the contents of square */
@@ -81,7 +83,8 @@ It didn't work until I separated the each statements.*/
 /* I originally had ".square-shape {
       @include shape(square, $color:red); etc. 
       which was showing me the first line of shapes.
-      Then I tried adding and calling color.*/
+      Then I tried adding and calling color.
+      This worked*/
 .square-green {
   /* checking shape for the value of square with an if statement */
   /* if shape contains the value of square, extend the contents of square */
@@ -94,7 +97,8 @@ It didn't work until I separated the each statements.*/
 /* I originally had ".square-shape {
       @include shape(square, $color:red); etc. 
       which was showing me the first line of shapes.
-      Then I tried adding and calling color.*/
+      Then I tried adding and calling color.
+      This worked*/
 .square-purple {
   /* checking shape for the value of square with an if statement */
   /* if shape contains the value of square, extend the contents of square */
@@ -107,7 +111,8 @@ It didn't work until I separated the each statements.*/
 /* I originally had ".square-shape {
       @include shape(square, $color:red); etc. 
       which was showing me the first line of shapes.
-      Then I tried adding and calling color.*/
+      Then I tried adding and calling color.
+      This worked*/
 .square-orange {
   /* checking shape for the value of square with an if statement */
   /* if shape contains the value of square, extend the contents of square */
@@ -120,7 +125,8 @@ It didn't work until I separated the each statements.*/
 /* I originally had ".square-shape {
       @include shape(square, $color:red); etc. 
       which was showing me the first line of shapes.
-      Then I tried adding and calling color.*/
+      Then I tried adding and calling color.
+      This worked*/
 .circle-red {
   /* checking shape for the value of square with an if statement */
   /* checking shape for the value of circle with an if statement */
@@ -133,7 +139,8 @@ It didn't work until I separated the each statements.*/
 /* I originally had ".square-shape {
       @include shape(square, $color:red); etc. 
       which was showing me the first line of shapes.
-      Then I tried adding and calling color.*/
+      Then I tried adding and calling color.
+      This worked*/
 .circle-blue {
   /* checking shape for the value of square with an if statement */
   /* checking shape for the value of circle with an if statement */
@@ -146,7 +153,8 @@ It didn't work until I separated the each statements.*/
 /* I originally had ".square-shape {
       @include shape(square, $color:red); etc. 
       which was showing me the first line of shapes.
-      Then I tried adding and calling color.*/
+      Then I tried adding and calling color.
+      This worked*/
 .circle-green {
   /* checking shape for the value of square with an if statement */
   /* checking shape for the value of circle with an if statement */
@@ -159,7 +167,8 @@ It didn't work until I separated the each statements.*/
 /* I originally had ".square-shape {
       @include shape(square, $color:red); etc. 
       which was showing me the first line of shapes.
-      Then I tried adding and calling color.*/
+      Then I tried adding and calling color.
+      This worked*/
 .circle-purple {
   /* checking shape for the value of square with an if statement */
   /* checking shape for the value of circle with an if statement */
@@ -172,7 +181,8 @@ It didn't work until I separated the each statements.*/
 /* I originally had ".square-shape {
       @include shape(square, $color:red); etc. 
       which was showing me the first line of shapes.
-      Then I tried adding and calling color.*/
+      Then I tried adding and calling color.
+      This worked*/
 .circle-orange {
   /* checking shape for the value of square with an if statement */
   /* checking shape for the value of circle with an if statement */
@@ -185,7 +195,8 @@ It didn't work until I separated the each statements.*/
 /* I originally had ".square-shape {
       @include shape(square, $color:red); etc. 
       which was showing me the first line of shapes.
-      Then I tried adding and calling color.*/
+      Then I tried adding and calling color.
+      This worked*/
 .pentagon-red {
   /* checking shape for the value of square with an if statement */
   /* checking shape for the value of circle with an if statement */
@@ -202,7 +213,8 @@ It didn't work until I separated the each statements.*/
 /* I originally had ".square-shape {
       @include shape(square, $color:red); etc. 
       which was showing me the first line of shapes.
-      Then I tried adding and calling color.*/
+      Then I tried adding and calling color.
+      This worked*/
 .pentagon-blue {
   /* checking shape for the value of square with an if statement */
   /* checking shape for the value of circle with an if statement */
@@ -219,7 +231,8 @@ It didn't work until I separated the each statements.*/
 /* I originally had ".square-shape {
       @include shape(square, $color:red); etc. 
       which was showing me the first line of shapes.
-      Then I tried adding and calling color.*/
+      Then I tried adding and calling color.
+      This worked*/
 .pentagon-green {
   /* checking shape for the value of square with an if statement */
   /* checking shape for the value of circle with an if statement */
@@ -236,7 +249,8 @@ It didn't work until I separated the each statements.*/
 /* I originally had ".square-shape {
       @include shape(square, $color:red); etc. 
       which was showing me the first line of shapes.
-      Then I tried adding and calling color.*/
+      Then I tried adding and calling color.
+      This worked*/
 .pentagon-purple {
   /* checking shape for the value of square with an if statement */
   /* checking shape for the value of circle with an if statement */
@@ -253,7 +267,8 @@ It didn't work until I separated the each statements.*/
 /* I originally had ".square-shape {
       @include shape(square, $color:red); etc. 
       which was showing me the first line of shapes.
-      Then I tried adding and calling color.*/
+      Then I tried adding and calling color.
+      This worked*/
 .pentagon-orange {
   /* checking shape for the value of square with an if statement */
   /* checking shape for the value of circle with an if statement */

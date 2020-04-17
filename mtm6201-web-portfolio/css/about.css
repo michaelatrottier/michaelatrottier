@@ -1,0 +1,439 @@
+/* CSS Reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* CSS Reset End */
+
+body {
+    background-color: #F5F5F5;
+}
+
+.logo,
+img {
+    display: flex;
+    margin-left: 25%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav>a {
+    text-decoration: none;
+    color: #393939;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.nav>a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 120%;
+    color: #393939;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    color: #393939;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.cp,
+.imd,
+#des,
+#lang-imd,
+.tools,
+.learned,
+#lang-cp,
+.pro-tools {
+    font-weight: 400;
+}
+
+.education {
+    display: grid;
+    text-align: center;
+    background-color: rgb(253, 253, 253);
+    border: 2px solid #c0c0c0;
+    border-radius: 25px;
+}
+
+.front-end {
+    display: grid;
+    text-align: center;
+    background-color: rgb(253, 253, 253);
+    border: 2px solid #c0c0c0;
+    border-radius: 25px;
+}
+
+.back-end {
+    display: grid;
+    text-align: center;
+    background-color: rgb(253, 253, 253);
+    border: 2px solid #c0c0c0;
+    border-radius: 25px;
+}
+
+.education img {
+    margin-top: 10%;
+    width: 20%;
+    height: auto;
+    margin-left: 40%;
+    margin-bottom: -15%;
+}
+
+.front-end img {
+    margin-top: 10%;
+    width: 15%;
+    height: auto;
+    margin-left: 40%;
+}
+
+.back-end img {
+    margin-top: 10%;
+    width: 17%;
+    height: auto;
+    margin-left: 42%;
+}
+
+/* grid 1 */
+.header {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "l l n n n n n n"
+}
+
+.logo {
+    grid-area: l;
+}
+
+.nav {
+    grid-area: n;
+}
+
+/* grid 2 */
+.about {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "e e e f f f b b b";
+}
+
+.education {
+    grid-area: e
+}
+
+.front-end {
+    grid-area: f;
+}
+
+.back-end {
+    grid-area: b
+}
+
+/*Media Query for Desktop */
+@media screen and (min-width:960px) {
+    .logo,
+    img {
+        grid-column: 1 / span 2;
+        width: 60%;
+        height: auto;
+    }
+
+    .nav {
+        grid-column: 3 / span 5;
+        padding-top: 4%;
+        margin-left: 10%;
+    }
+
+    #contact {
+        margin-left: 20%;
+    }
+
+    .nav>a {
+        font-size: 130%;
+    }
+
+    .education {
+        grid-column: 1 / span 3;
+        justify-self: end;
+        margin-top: 5%;
+        width: 80%;
+        height: 160%;
+    }
+
+    .front-end {
+        grid-column: 4 / span 3;
+        justify-self: center;
+        margin-top: 5%;
+        width: 80%;
+        height: 160%;
+    }
+
+    .back-end {
+        grid-column: 7 / span 3;
+        justify-self: start;
+        margin-top: 5%;
+        width: 80%;
+        height: 160%;
+    }
+    #edu-image{
+        margin-bottom:-13%;
+    }
+    #back{
+        margin-bottom:2%;
+    }
+}
+
+
+/*Media Query for Tablet*/
+@media screen and (max-width:959px) {
+    .logo,
+    img {
+        grid-column: 1 / span 2;
+        width: 80%;
+        height: auto;
+    }
+
+    .nav {
+        grid-column: 3 / span 5;
+        padding-top: 6%;
+        margin-left: 10%;
+    }
+
+    #contact {
+        margin-left: 20%;
+    }
+
+    .nav>a {
+        font-size: 110%;
+    }
+
+    .education {
+        grid-column: 1 / span 3;
+        justify-self: end;
+        margin-top: 10%;
+        width: 80%;
+        height: 160%;
+    }
+
+    .front-end {
+        grid-column: 4 / span 3;
+        justify-self: center;
+        margin-top: 10%;
+        width: 80%;
+        height: 160%;
+    }
+
+    .back-end {
+        grid-column: 7 / span 3;
+        justify-self: start;
+        margin-top: 10%;
+        width: 80%;
+        height: 160%;
+    }
+    #edu-image{
+        margin-bottom:-25%;
+    }
+
+    #back{
+        margin-bottom:5%;
+    }
+}
+
+/*Media Query for Mobile*/
+@media screen and (max-width:599px) {
+    .logo,
+    img {
+        grid-column: 1 / span 2;
+        margin-left: 5%;
+        width: 110%;
+        height: auto;
+    }
+
+    .nav {
+        grid-column: 4 / span 3;
+        padding-top: 15%;
+    }
+
+    #contact {
+        margin-left: 30%;
+    }
+
+    .nav>a {
+        font-size: 100%;
+        margin-left: 10%;
+    }
+
+    .education {
+        grid-column: 1 / span 3;
+        justify-self: start;
+        margin-left:10%;
+        width: 140%;
+        height: 140%;
+    }
+
+    .front-end {
+        grid-column: 6 / span 3;
+        justify-self: center;
+        margin-left:10%;
+        width: 140%;
+        height: 140%;
+    }
+
+    .back-end {
+        grid-column: 1 / span 6;
+        grid-row:2;
+        justify-self: start;
+        margin-top: 60%;
+        margin-bottom:10%;
+        margin-left:5%;
+        width: 68%;
+        height: 80%; 
+    }
+
+    #edu-image{
+        margin-bottom:-13%;
+    }
+    #front{
+        margin-bottom:9%;
+    }
+}

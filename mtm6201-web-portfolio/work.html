@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home - michaela online</title>
+    <link rel="shortcut icon" type="icons/x-icon" href="images/logo/icons/favicon.ico">
+    <link rel="stylesheet" href="css/work.css">
+    <script src="js/work.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="images/logo/logo-2.png" alt="logo">
+        </div>
+
+        <div class="nav">
+            <a id="index" href="index.html" class=navHome>Home</a>
+            <a id="about" href="about.html" class=navAbout>About</a>
+            <a id="work" href="work.html" class=navWork>Work</a>
+            <a id="contact" href="contact.html" class=navContact>Contact</a>
+        </div>
+    </div>
+
+    <div class="redesign">Website Redesign Assignment</div>
+
+    <div class="wrapper">
+        <!-- Images used to open the slideshow -->
+        <div class="row">
+            <div class="column-1">
+                <img src="images/gallery/project-1/home.png" onclick="openSlide();currentSlide(1)" class="hover-shadow"
+                    alt="home">
+            </div>
+            <div class="column-2">
+                <img src="images/gallery/project-1/art_sales.png" onclick="openSlide();currentSlide(2)"
+                    class="hover-shadow" alt="art-sales">
+            </div>
+            <div class="column-3">
+                <img src="images/gallery/project-1/about.png" onclick="openSlide();currentSlide(3)"
+                    class="hover-shadow" alt="about">
+            </div>
+        </div>
+
+        <!-- Slideshow -->
+        <div id="myPhotos" class="photos">
+            <span class="close cursor" onclick="closeSlide()">&times;</span>
+            <div class="slideshow-content">
+                <div class="proj-1">
+                    <img src="images/gallery/project-1/home.png" alt="home">
+                </div>
+                <div class="proj-1">
+                    <img src="images/gallery/project-1/art_sales.png" alt="art-sales">
+                </div>
+                <div class="proj-1">
+                    <img src="images/gallery/project-1/about.png" alt="about">
+                </div>
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
